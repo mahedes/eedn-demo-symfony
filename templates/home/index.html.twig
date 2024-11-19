@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <h1> Accueil </h1>
+    
+    {% for product in productList %}
+        <p>{{ product.id }} - {{ product.name }} - {{ product.price }}</p>
+    {% endfor %}
+{% endblock %}
